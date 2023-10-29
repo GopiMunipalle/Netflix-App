@@ -1,70 +1,105 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Netflix Movie App
 
-## Available Scripts
+The **Netflix Movie App** is a web application that offers a wide range of features for users to discover, watch, and enjoy movies and TV shows. It includes functionalities for user authentication, browsing, searching, and viewing movie details. The application aims to provide an experience similar to the Netflix platform.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+**Login Route**: Allows user authentication, displaying errors for invalid credentials and navigating to the Home Route on success.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Home Route**: Displays trending and original movies with loader animations and retry options. Users can click on movies to view details.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Popular Route**: Presents a list of popular movies with a loader, retry option, and seamless navigation using the header.
 
-### `npm test`
+**Movie Item Details Route**: Displays detailed movie information and similar movies. Features loader animations, retry option, and functional header navigation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Login Route
+ Users can log in with a valid username and password.
+ Display error messages when an invalid username or password is provided.
+Successful login navigates the user to the Home Route.
+Unauthenticated users trying to access protected routes are redirected to the Login Route.
+Authenticated users trying to access the Login Route are redirected to the Home Route.
 
-### `npm run build`
+### Home Route
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Authenticated users see a random movie title and poster with details from the Originals API.
+Display movies from the Trending Now Movies API and the Originals API.
+Show loader while fetching data.
+Users can click on a movie item to navigate to the Movie Item Details Route.
+If any API request fails, display the corresponding failure view.
+Users can click "Try Again" to retry the failed request.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Header
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clicking on the Movies logo in the header navigates to the Home Route.
+Links for Home, Popular, Search, and Account allow users to navigate to their respective routes.
 
-### `npm run eject`
+### Popular Route
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Authenticated users can view a list of popular movies.
+Display loader while fetching data.
+Users can click on a movie item to navigate to the Movie Item Details Route.
+If the API request fails, show the failure view.
+Users can click "Try Again" to retry the request.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Movie Item Details Route
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Authenticated users can see details of a movie.
+Display loader while fetching data.
+Show movie details and a list of similar movies.
+If the API request fails, display the failure view.
+Users can click "Try Again" to retry the request.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Search Route
 
-## Learn More
+Authenticated users can search for movies using a search input and button.
+Make an API request to search for movies based on the search input.
+Display loader while fetching search results.
+Show search results or a "no results" view if the list is empty.
+Users can click on a movie item to navigate to the Movie Item Details Route.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Account Route
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Display the username provided during login.
+Mask the displayed password.
+Users can log out by clicking the "Logout" button.
 
-### Code Splitting
+### Not Found Route
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+When a random URL is provided, users are directed to the Not Found Route.
 
-### Analyzing the Bundle Size
+### Responsiveness
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Ensure the website is responsive for mobile and tablet views.
 
-### Making a Progressive Web App
+## Quick Tips
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Use the provided URLs for data fetch.
+Use media queries for responsiveness.
+Avoid using third-party packages not mentioned in the Quick Tips.
+Style components with normal HTML elements for Mini Projects (styled-components are not supported).
+Use the `testid` attribute for HTML elements, following the given examples.
 
-### Advanced Configuration
+## Routes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Render components for different routes as specified.
+Use the `loader` container for displaying the loader.
 
-### Deployment
+## Additional Information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Utilize alt attributes in image elements.
+Set and access cookies with the key name `jwt_token`.
 
-### `npm run build` fails to minify
+## Stretch Goals
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you wish to add extra functionality to the project, consider implementing the following features:
+
+Fetch data from the Top Rated Movies API.
+Enable pagination for popular movies and search results.
+
+These stretch goals are optional but can enhance the application's capabilities.
+
+## Resources
+
+Use the provided Data fetch URLs.
+Refer to the provided user credentials for testing.
