@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Netflix/static/css/main.107e2402.css",
-    "main.js": "/Netflix/static/js/main.dd448309.js",
-    "static/media/slick.svg": "/Netflix/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/Netflix/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/Netflix/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/Netflix/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/Netflix/index.html",
-    "main.107e2402.css.map": "/Netflix/static/css/main.107e2402.css.map",
-    "main.dd448309.js.map": "/Netflix/static/js/main.dd448309.js.map"
+    "main.css": "/Netflix-App/static/css/main.44abb356.css",
+    "main.js": "/Netflix-App/static/js/main.80ace1bd.js",
+    "static/media/slick.svg": "/Netflix-App/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Netflix-App/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Netflix-App/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Netflix-App/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Netflix-App/index.html",
+    "main.44abb356.css.map": "/Netflix-App/static/css/main.44abb356.css.map",
+    "main.80ace1bd.js.map": "/Netflix-App/static/js/main.80ace1bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.107e2402.css",
-    "static/js/main.dd448309.js"
+    "static/css/main.44abb356.css",
+    "static/js/main.80ace1bd.js"
   ]
 }
